@@ -23,6 +23,7 @@ import {
 
 import externalLinks from "../../components/externalLinks";
 import portableTextComponents from "../../utils/portableTextComponents";
+import CalcSharebtn from "../../components/CalcShare";
 
 export default function CalculatorSlugRoute({ page, calculatorConfig }) {
   const [open, setOpen] = useState(false);
@@ -113,6 +114,7 @@ export default function CalculatorSlugRoute({ page, calculatorConfig }) {
                 >
                   {calculatorConfig.feedback.linkText}
                 </Button>
+                <CalcSharebtn></CalcSharebtn>
                 <Link
                   sx={{ textAlign: "center" }}
                   href={
